@@ -11,15 +11,31 @@ html,
 body {
     width: 100%;
     height: 100%;
+    font-size: 0.8333333333vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+@media (max-width:991px) {
+    html {
+        font-size: 1.3333334vw;
+    }
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 4.102564103vw;
+    }
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 h2 {
-    font-size: 55px;
-    margin: 20px 0;
+    font-size: 3.438rem;
+    margin: 1.25rem 0;
     font-weight: 900;
 }
 
@@ -42,7 +58,7 @@ h2 {
 #page4,
 #page5,
 #page6,
-#page7{
+#page7 {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -67,13 +83,13 @@ canvas {
 .loop-text {
     position: absolute;
     top: 30%;
-    font-size: 100px;
+    font-size: 6.25rem;
     white-space: nowrap;
 }
 
 .loop-text>h1 {
     font-weight: 900;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 0.125rem black;
     color: transparent;
     animation: textAnimation 300s linear infinite;
 }
@@ -96,7 +112,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1.25rem;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -104,7 +120,7 @@ nav {
 }
 
 .logo p {
-    font-size: 25px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
@@ -115,9 +131,9 @@ nav {
 .wallet span {
     color: #fff;
     background: #000;
-    padding: 10px 20px;
-    border-radius: 30px;
-    margin-left: 10px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.875rem;
+    margin-left: 0.625rem;
 }
 
 .hero-para {
@@ -127,7 +143,7 @@ nav {
 }
 
 .hero-para p {
-    line-height: 25px;
+    line-height: 1.563rem;
 }
 
 #page1 {
@@ -141,18 +157,18 @@ nav {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 6.25rem;
     position: absolute;
     top: 40%;
 }
 
 .page1-text .left-text {
-    margin-top: -250px;
+    margin-top: -15.625rem;
 }
 
 .page2-text .left-text,
 .page3-text .left-text {
-    margin-top: -200px;
+    margin-top: -12.5rem;
 }
 
 .page2-text .right-text {
@@ -184,8 +200,8 @@ nav {
 }
 
 .loop-images img {
-    width: 420px;
-    margin: 0 -48px;
+    width: 26.25rem;
+    margin: 0 -3rem;
 }
 
 .loop-images {
@@ -193,7 +209,7 @@ nav {
 }
 
 #page5 {
-    border-bottom: 1px dashed #000;
+    border-bottom: 0.063rem dashed #000;
 }
 
 .page5-content {
@@ -210,33 +226,33 @@ nav {
     justify-content: center;
     width: 80%;
     margin: 0 auto;
-    gap: 20px;
-    padding: 50px 0;
+    gap: 1.25rem;
+    padding: 3.125rem 0;
 }
 
 .card {
     width: 32%;
     color: #fff;
-    padding: 40px;
-    border-radius: 20px;
+    padding: 2.5rem;
+    border-radius: 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.938rem;
     background: linear-gradient(70deg, #101010, #343434);
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 .card p {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.563rem;
 }
 
 #page6 {
     position: relative;
-    padding-top: 150px;
+    padding-top: 9.375rem;
     display: flex;
     flex-direction: column;
 }
@@ -250,14 +266,14 @@ h3 {
 
 .main-avatar-img {
     position: absolute;
-    bottom: 150PX;
+    bottom: 9.375rem;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .main-avatar-img img {
-    width: 530px;
+    width: 33.125rem;
 }
 
 .info {
@@ -269,12 +285,12 @@ h3 {
     margin: 0 auto;
     width: 100%;
     position: absolute;
-    bottom: 40px;
+    bottom: 2.5rem;
 }
 
 .bottom-loop-text .heading {
     font-weight: 900;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 0.125rem black;
     color: transparent;
 }
 
@@ -291,7 +307,7 @@ h3 {
 }
 
 .bottom-loop-text {
-    font-size: 50px;
+    font-size: 3.125rem;
     white-space: nowrap;
 }
 
@@ -316,9 +332,9 @@ h3 {
 }
 
 .divider hr {
-    width: 200px;
+    width: 12.5rem;
     transform: rotate(90deg);
-    margin: 150px 0;
+    margin: 9.375rem 0;
 }
 
 .footer-content {
@@ -329,25 +345,25 @@ h3 {
     text-align: center;
     width: 100%;
     height: 100%;
-    gap: 40px;
-    margin-top: -50px;
+    gap: 2.5rem;
+    margin-top: -3.125rem;
 }
 
 .footer-content h2 {
-    font-size: 200px;
-    -webkit-text-stroke: 2px #fff;
+    font-size: 12.5rem;
+    -webkit-text-stroke: 0.125rem #fff;
     color: transparent;
     font-style: italic;
-    line-height: 200px;
+    line-height: 12.5rem;
 }
 
 .footer-content a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 60px;
-    border: 1px solid #fff;
-    margin: 0 10px;
-    border-radius: 30px;
+    padding: 0.625rem 3.75rem;
+    border: 0.063rem solid #fff;
+    margin: 0 0.625rem;
+    border-radius: 1.875rem;
     transition: all 0.4s ease-out;
 }
 
@@ -358,7 +374,7 @@ h3 {
 }
 
 .contact-email p {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .contact-email p span {
@@ -366,18 +382,18 @@ h3 {
 }
 
 .contact-email p sup {
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .sold-out {
     position: absolute;
-    bottom: 30px;
+    bottom: 1.875rem;
     z-index: 10;
-    right: 70px;
+    right: 4.375rem;
 }
 
 .sold-out-image img {
-    width: 90px;
+    width: 5.625rem;
 }
 
 .inner-sold-out {
@@ -386,7 +402,7 @@ h3 {
 }
 
 .sold-out-image img {
-    width: 90px;
+    width: 5.625rem;
 }
 
 .inner-sold-out {
@@ -397,10 +413,10 @@ h3 {
 .sold-out-text {
     background: #111;
     color: #fff;
-    padding: 15px 30px;
+    padding: 0.938rem 1.875rem;
     border-radius: 10px;
-    margin-top: 33px;
-    margin-left: -20px;
+    margin-top: 0.625rem;
+    margin-left: -1.25rem;
     z-index: 1;
     font-weight: bold;
 }
